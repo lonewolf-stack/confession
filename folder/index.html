@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You, My Love ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop playsinline>
+  <source src="start.mp3" type="audio/mpeg">
+</audio>
+
+<div class="nav">
+  <button onclick="showTab('letter')">💌 Letter</button>
+  <button onclick="showTab('memories')">📸 Memories</button>
+  <button onclick="showTab('promise')">🤞 Promise</button>
+  <button id="musicBtn" onclick="toggleMusic()">🔇 Music Off</button>
+  <button id="bgBtn">🟢 Background</button>
+</div>
+
+<div class="container">
+
+  <section id="letter" class="tab active">
+    <h1>TO THIS FLOWER 🌸</h1>
+
+    <div class="letter-slider-wrapper">
+      <div class="letter-slider" id="letterSlider">
+
+        <div class="letter-slide">
+          <p class="typing">
+            Pasensya na kung sa gantong paraan pako aamin hahaha nakakatawa talaga.Diko rin kase maintindihan bat ako nagkagusto sayo nang walang dahilan,
+            nung una kase kamukha mo lang yung first crush ko kaya ganun. Pero sa paglipas nang araw parang bang meron akong nakita na kakaiba
+            at napansin korin na kakaiba karin pala.
+          </p>
+        </div>
+
+        <div class="letter-slide">
+          <p class="typing">
+            Kinakaya mo ang hindi kaya nang mga babaeng nasa edad mo, paghiirap at pagdurusa na hindi mo maiiwasan.
+            Ngunit kahit ganon paman, kahahanga-hanga ka talaga kinaya mong itago sa pubiko ang nararamdaman ang pinipilit na 
+            ngumiti sa harap ng kaklase mo at sa mga kaibigan.
+          </p>
+        </div>
+
+        <div class="letter-slide">
+          <p class="typing">
+            Siguro, kung hindi lang ako duwag baka may pagasa pa ako sayo noh, kahit wala naman ako hitsura at talento gaya ng mga 
+            tagahanga mo. Kaya sa gantong paraan nalang ako umaamin sa tinatago na ito. Pero masaya ako na ikaw ang naging pangalawang 
+            nagpatibok nang malamig kong puso.
+          </p>
+        </div>
+
+        <div class="letter-slide">
+          <p class="typing">
+            Hindi ko inaasahan na aabot ako sa puntong ganito,pero masaya ako sa kung ano man itong nararamdaman ko. Nagbigay ito nang sya saken habang nasa madilim ako 
+            na panahon, iniisip kolang na kung ikaw nga kinaya mo ako pa kaya na lalake diko kakayanin ang kinaya nang tulad mo.
+            Pero napagtanto kona malakas ka nga pala. 
+            
+          </p>
+        </div>
+
+        <div class="letter-slide">
+          <p class="typing">
+            Kaya siguro ito na yung simpleng pag-amin na kaya kong ibigay. Patawarin mo sana ako sa kaduwagan na ipinapakita ko ngayon.
+            Masaya ako na may mag-aalaga sayong kahit kaylan diko maiibigay. Sana manatili kang palaging maayos at malusog para sa problema mong haharapin.
+          </p>
+          <button onclick="revealLove()">ETO NGA PALA PRESS MO[SURPRISE] 💘</button>
+          <div id="secret">Ikaw palagi ang pipiliin ko ( Sa alam ko, sa ngayon).</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="dots" id="letterDots"></div>
+  </section>
+
+<section id="memories" class="tab">
+  <h2>My memory of you 📸</h2>
+
+  <label for="photoUpload" class="custom-upload">Choose Photos</label>
+  <input type="file" id="photoUpload" accept="image/jpeg" multiple>
+
+  <div class="gallery" id="gallery"></div>
+</section>
+
+  <section id="promise" class="tab">
+    <h2>AKING PANGAKO 🤞</h2>
+    <p>Last na talaga toh, block monalang ako pag dimo gusto ang edit nato. hahaha
+      Binabati kita nang maligayang pasko at masaganang bagong taon. 
+    </p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
